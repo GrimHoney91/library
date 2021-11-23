@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="reset.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="some.js" type="text/javascript" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>MyLibrary</h1>
+    </header>
+    <main>
+        <div id="popup">
+            <button id="close">x</button>
+                <div id="top">
+                    <input class="form-group1" type="text" id="title" name="title" placeholder="Title" required>
+                    <input class="form-group1" type="text" id="author" name="author" placeholder="Author" required>
+                    <input class="form-group1" type="number" id="pages" name="pages" placeholder="Number of Pages" required>
+                </div>
+                <div id="bottom">
+                    <label id="yes-no" for="yes-no">Have you read this book?</label>
+                    <br>
+                    <input class="form-group2" id="yes" type="radio" name="yes-no" value="yes" checked>Yes</input>
+                    <input class="form-group2" id="no" type="radio" name="yes-no" value="no">No</input>
+                    <br>
+                    <button id="submitBtn">Submit</button>
+                </div>
+        </div>
+        <button id="add">+</button>
+    </main>
+    <footer>
+        <h3>GrimHoney</h3>
+    </footer>
+    
+</body>
+</html>
