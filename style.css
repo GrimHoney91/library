@@ -1,36 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+}
 html {
     font-size: 10px;
-    background-color: cornsilk;
-    width: 100%;
-    height: 100%;
-    font-family: 'Quattrocento', serif;
 }
 body {
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
 }
 header {
-    background-color: brown;
-    height: 6rem;
-    font-size: 4.5rem;
-    color: white;
+    background-color: #0d1a26;
+    height: 12rem;
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
     display: grid;
 }
 main {
-    height: 100%;
+    min-height: inherit;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-auto-rows: 1fr 1fr 1fr 1fr;
+    background-color: rgba(176, 196, 222, 0.4);
 }
 footer {
-    background-color: brown;
-    color: white;
-    position: fixed;
-    bottom: 0;
+    background-color: #0d1a26;
+    color: whitesmoke;
+    margin-bottom: 0;
     width: 100%;
-    height: 4.5rem;
-    font-size: 2rem;
+    height: 6rem;
+    font-size: 3rem;
     display: grid;
 }
 h1 {
@@ -45,8 +48,11 @@ h3 {
     margin: auto;
     display: none;
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     flex-direction: column;
-    background-color: brown;
+    background-color: #0d1a26;
     width: 25%;
     height: 60%;
 }
@@ -62,16 +68,18 @@ form {
     height: 60%;
 }
 #close {
-   width: 2rem;
-   height: 2rem;
+   width: 3.5rem;
+   height: 3.5rem;
    border-radius: 50%;
-   margin-left: 94%;
-   margin-top: 1%;
+   position: absolute;
+   font-size: 2.5rem;
+   top: -1rem;
+   right: -1rem;
    text-align: center;
    font-weight: bold;
-   color: black;
+   color: #0d1a26;
    background-color: white;
-   border: none;
+   border: 3.5px solid #0d1a26;
    cursor: pointer;
 }
 .form-group1 {
@@ -79,6 +87,10 @@ form {
     height: 4rem;
     font-size: 2rem;
     margin: auto;
+    outline: none;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
 }
 #bottom {
     text-align: center;
@@ -88,27 +100,33 @@ form {
     height: 40%;
 }
 #submitBtn {
-    background-color: white;
+    background-color: whitesmoke;
     margin-top: 2rem;
     text-align: center;
-    font-size: 1.8rem;
-    width: 10rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 16rem;
     height: 4rem;
     cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #0d1a26;
 }
 #add {
-    width: 6rem;
-    height: 6rem;
+    width: 7rem;
+    height: 7rem;
     border-radius: 100%;
-    background-color: brown;
+    background-color: #0d1a26;
     font-size: 4rem;
+    font-weight: bold;
     color: white;
     cursor: pointer;
     border-style: none;
-    bottom: 6rem;
-    right: 2rem;
+    bottom: 8rem;
+    right: 4rem;
     display: block;
     position: fixed;
+    transition: all 0.2s ease-in-out;
 }
 button:hover {
     transform: scale(1.1);
