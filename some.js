@@ -24,22 +24,17 @@ closePopup.addEventListener('click', () => {
 });
 let myLibrary = [];
 
-class Book {
-    constructor (title, author, pages, status) {
+function Book(title, author, pages, status) {
     this.title = title,
     this.author = author,
     this.pages = pages,
     this.status = status
-    }
 }
 
 function addBookToLibrary() {
     if ((title.value != "" && author.value != "") && (pages.value != "")) {
     myLibrary.push(new Book(title.value, author.value, pages.value, radioBtns.value));
     createDiv();
-    title.value = null;
-    author.value = null;
-    pages.value = null;
     popup.setAttribute('style', 'display: none');
     addButton.setAttribute('style', 'display: block');
     }
