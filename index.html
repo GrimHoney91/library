@@ -14,19 +14,21 @@
     <main>
         <div id="popup">
             <button id="close">x</button>
-                <div id="top">
-                    <input class="form-group1" type="text" id="title" name="title" placeholder="Title" required>
-                    <input class="form-group1" type="text" id="author" name="author" placeholder="Author" required>
-                    <input class="form-group1" type="number" id="pages" name="pages" min="10" max="1000" placeholder="Number of Pages" required>
-                </div>
-                <div id="bottom">
-                    <label id="yes-no" for="yes-no">Have you read this book?</label>
-                    <br>
-                    <input class="form-group2" id="yes" type="radio" name="yes-no" value="yes" checked>Yes</input>
-                    <input class="form-group2" id="no" type="radio" name="yes-no" value="no">No</input>
-                    <br>
-                    <button id="submitBtn">Submit</button>
-                </div>
+                <form action="">
+                    <div id="top">
+                        <input class="form-group1" type="text" id="title" name="title" placeholder="Title" required>
+                        <input class="form-group1" type="text" id="author" name="author" placeholder="Author" required>
+                        <input class="form-group1" type="number" id="pages" name="pages" min="10" placeholder="Number of Pages" required>
+                    </div>
+                    <div id="bottom">
+                        <label id="yes-no" for="yes-no">Have you read this book?</label>
+                        <br>
+                        <input class="form-group2" id="yes" type="radio" name="yes-no" value="yes" checked>Yes</input>
+                        <input class="form-group2" id="no" type="radio" name="yes-no" value="no">No</input>
+                        <br>
+                        <button id="submitBtn">Submit</button>
+                    </div>
+                </form>
         </div>
         <button id="add">+</button>
     </main>
