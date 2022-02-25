@@ -50,7 +50,7 @@ function createDiv() {
     bottomDiv.classList.add('radBtns');
     let bookTitle = `${myLibrary[myLibrary.length-1].title}`;
     topDiv.innerText = `${bookTitle}
-    by 
+    by
     ${myLibrary[myLibrary.length-1].author}
     ${myLibrary[myLibrary.length-1].pages} pages`;
     let readBtn = document.createElement('button');
