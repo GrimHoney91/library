@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Amiri', sans-serif;
+}
+html {
+    font-size: 10px;
+}
+/* body {
+
+} */
+header {
+    background-color: #0d1a26;
+    height: 12rem;
+    font-size: 5rem;
+    font-weight: bold;
+    color: whitesmoke;
+    display: grid;
+}
+main {
+    min-height: calc(100vh - 18rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr;
+    background-color: rgba(176, 196, 222, 0.4);
+    row-gap: 2rem;
+    padding: 2rem;
+}
+footer {
+    background-color: #0d1a26;
+    color: whitesmoke;
+    margin-bottom: 0;
+    width: 100%;
+    height: 6rem;
+    font-size: 3rem;
+    font-weight: bold;
+    display: grid;
+}
+h1 {
+    display: block;
+    margin: auto;
+    font-size: 5rem;
+}
+h3 {
+    display: block;
+    margin: auto;
+    font-size: 2rem;
+}
+#popup {
+    margin: auto;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    background-color: #0d1a26;
+    width: 25%;
+    height: 60%;
+}
+form {
+    width: 100%;
+    height: 100%;
+}
+#top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+}
+#close {
+   width: 3.5rem;
+   height: 3.5rem;
+   line-height: 2rem;
+   border-radius: 50%;
+   position: absolute;
+   font-size: 2.25rem;
+   top: -1rem;
+   right: -1rem;
+   text-align: center;
+   font-weight: bold;
+   color: #0d1a26;
+   background-color: white;
+   border: 3.5px solid #0d1a26;
+   cursor: pointer;
+}
+.form-group1 {
+    width: 80%;
+    height: 4rem;
+    font-size: 2rem;
+    margin: auto;
+    outline: none;
+    padding: 7px;
+    border: none;
+    border-radius: 3px;
+}
+.form-group2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#bottom {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+    height: 40%;
+}
+#submitBtn {
+    background-color: whitesmoke;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 16rem;
+    height: 4rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    color: #0d1a26;
+}
+#add {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    background-color: #0d1a26;
+    border: 3px solid tomato;
+    font-size: 4rem;
+    font-weight: bold;
+    color: whitesmoke;
+    cursor: pointer;
+    bottom: 8rem;
+    right: 4rem;
+    display: block;
+    position: fixed;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.divs {
+    width: 22.5rem;
+    height: 30rem;
+    margin: auto;
+    background-size: 100%;
+    background-color: #0d1a26;
+    background-repeat: no-repeat;
+    background-position: top;
+    border-radius: 3px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.bookInfo {
+    margin: auto;
+    width: 100%;
+    height: 50%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+    word-wrap: break-word;
+}
+.book {
+    margin: auto;
+    width: 100%;
+    height: 30%;
+    background-image: url(images/book.jpg);
+    background-position: center;
+    background-size: 90%;
+}
+.radBtns {
+    height: 20%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Amiri';
+}
+.radio-btns {
+    border: none;
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.75rem;
+    color: #0d1a26;
+    font-weight: bold;
+}
+.read {
+    background-color: skyblue;
+}
+.notRead {
+    background-color: tomato;
+}
+.delete {
+    background-color: tomato;
+    border-radius: 3px;
+    border: none;
+    display: block;
+    margin: auto;
+    width: 9rem;
+    height: 3.5rem;
+    font-size: 1.75rem;
+    color: #0d1a26;
+    font-weight: bold;
+}

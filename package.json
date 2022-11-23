@@ -1,0 +1,33 @@
+{
+  "name": "personal-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "some.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GrimHoney91/personal-library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GrimHoney91/personal-library/issues"
+  },
+  "homepage": "https://github.com/GrimHoney91/personal-library#readme",
+  "dependencies": {
+    "firebase": "^9.8.2",
+    "uniqid": "^5.4.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.2"
+  }
+}
